@@ -4,6 +4,14 @@
 // Show me how to calculate the average price of all items. Please console.log the average.
 // The output should be "The average price is $23.62"
 
+// **** ideas to get started: break each question down into smaller parts:
+//               - Get the price of all items
+//               - Get the price off the first item  items[0].price
+//               - Sum all the items into a single number.
+//               - Add each number together.
+//               - Average that number by dividing by the amount of items
+//               - console.log() that number in the format 'The average price is $" number"'
+
 
 // QUESTION TWO
 // Show me how to get an array of items that cost between $14.00 and $18.00 USD
@@ -80,6 +88,8 @@
 
 
 // Ok, you have the questions. Here's the data to use!
+
+
 var items = [{
   "listing_id": 161489961,
   "state": "active",
