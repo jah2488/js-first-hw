@@ -1116,3 +1116,60 @@ var items = [{
   "has_variations": false,
   "used_manufacturer": false
 }]
+
+
+// "items" is name of array
+
+/* QUESTION 1 */
+
+var priceItem = function (item) {
+  return item.price;
+};
+
+//console.log(priceItem(items[0])); // check to see if priceItem function is working
+
+var itemPrices = items.map(priceItem);
+
+//console.log(itemPrices); // new array with only prices of all items
+
+var totalAllPrices = itemPrices.reduce(function (previousValueInItems, currentValueInItems) {
+  return previousValueInItems + currentValueInItems;
+}, 0); // reduce on new itemPrices array
+
+//console.log(totalAllPrices); // value of all prices added up
+
+var averageOfAllPrices = totalAllPrices / items.length;
+
+var averagePrice = averageOfAllPrices.toFixed(2);
+
+console.log("QUESTION ONE: The average price is $" + averagePrice);
+
+/* QUESTION 2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
