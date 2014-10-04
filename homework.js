@@ -1,95 +1,3 @@
-// A little extra homework with .map(), .reduce(), .filter(), and .forEach()
-
-// QUESTION ONE
-// Show me how to calculate the average price of all items. Please console.log the average.
-// The output should be "The average price is $23.62"
-
-// **** ideas to get started: break each question down into smaller parts:
-//               - Get the price of all items
-//               - Get the price off the first item  items[0].price
-//               - Sum all the items into a single number.
-//               - Add each number together.
-//               - Average that number by dividing by the amount of items
-//               - console.log() that number in the format 'The average price is $" number"'
-
-
-// QUESTION TWO
-// Show me how to get an array of items that cost between $14.00 and $18.00 USD
-// The output should be:
-//
-// "Items that cost between $14.00 USD and $18.00 USD:"
-// [
-//   {
-//      title: "1970s Coors Banquet Glass Beer Pitcher",
-//      ...
-//   },
-//   {
-//      title: "The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug",
-//      ...
-//   },
-//   {
-//      title: "Hand Painted Colorful Feather Glass",
-//      ...
-//   }
-// ]
-
-
-// QUESTION THREE
-// Show me how find the item with a "GBP" curreny code and print its name and price. Please console.log the one you find.
-// The output should be "1970s Schlitz Malt Liquor Glass Beer Pitcher costs Â£18"
-
-
-// QUESTION FOUR
-// Show me how to find which items are made of wood. Please console.log the ones you find.
-// The output should be:
-//
-// SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.
-// Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.
-// Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
-// Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
-// Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
-
-
-// QUESTION FIVE
-// Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
-//
-// The output should be:
-// Qty of 2 Groomsmen Gift - Stainless Steel Personalized Bottle Opener - NO Capcatcher has 9 materials:
-// wall mount bottle opener
-// wedding
-// man cave
-// christmas gift
-// guy gift
-// fathers day
-// home bar
-// beer
-// bar
-//
-//
-// The Three Broomsticks Customizable Beer Stein Mug, Harry Potter  Inspired, hogsmeade village, harry potter gift, three broomsticks mug  has 13 materials:
-// glass
-// sandblast cabinet
-// vinyl
-// beer glass
-// pint glass
-// etched pint glass
-// etched glass
-// etched beer glass
-// 16 oz pint
-// beer gift
-// etched harry potter glass
-// the three broomsticks glass
-// personalized harry potter glass
-
-
-// QUESTION 6
-// Show me how to calculate how many items were made by their sellers
-// The output should be "18 were made by their sellers"
-
-
-// Ok, you have the questions. Here's the data to use!
-
-
 var items = [{
   "listing_id": 161489961,
   "state": "active",
@@ -1117,8 +1025,112 @@ var items = [{
   "used_manufacturer": false
 }]
 
+// A little extra homework with .map(), .reduce(), .filter(), and .forEach()
 
-// "items" is name of array
+// QUESTION ONE
+// Show me how to calculate the average price of all items. Please console.log the average.
+// The output should be "The average price is $23.62"
+
+// **** ideas to get started: break each question down into smaller parts:
+//               - Get the price of all items
+//               - Get the price off the first item  items[0].price
+//               - Sum all the items into a single number.
+//               - Add each number together.
+//               - Average that number by dividing by the amount of items
+//               - console.log() that number in the format 'The average price is $" number"'
+
+
+// QUESTION TWO
+// Show me how to get an array of items that cost between $14.00 and $18.00 USD
+// The output should be:
+//
+// "Items that cost between $14.00 USD and $18.00 USD:"
+// [
+//   {
+//      title: "1970s Coors Banquet Glass Beer Pitcher",
+//      ...
+//   },
+//   {
+//      title: "The Three Broomsticks Customizable Beer Stein Mug, Harry Potter Inspired, hogsmeade village, harry potter gift, three broomsticks mug",
+//      ...
+//   },
+//   {
+//      title: "Hand Painted Colorful Feather Glass",
+//      ...
+//   }
+// ]
+
+
+// QUESTION THREE
+// Show me how find the item with a "GBP" currency code and print its name and price. Please console.log the one you find.
+// The output should be "1970s Schlitz Malt Liquor Glass Beer Pitcher costs Â£18"
+
+
+// QUESTION FOUR
+// Show me how to find which items are made of wood. Please console.log the ones you find.
+// The output should be:
+//
+// SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.
+// Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.
+// Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
+// Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
+// Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
+
+
+// QUESTION FIVE
+// Show me how to find which items are made of eight or more materials. Please console.log the ones you find.
+//
+// The output should be:
+// Qty of 2 Groomsmen Gift - Stainless Steel Personalized Bottle Opener - NO Capcatcher has 9 materials:
+// wall mount bottle opener
+// wedding
+// man cave
+// christmas gift
+// guy gift
+// fathers day
+// home bar
+// beer
+// bar
+//
+//
+// The Three Broomsticks Customizable Beer Stein Mug, Harry Potter  Inspired, hogsmeade village, harry potter gift, three broomsticks mug  has 13 materials:
+// glass
+// sandblast cabinet
+// vinyl
+// beer glass
+// pint glass
+// etched pint glass
+// etched glass
+// etched beer glass
+// 16 oz pint
+// beer gift
+// etched harry potter glass
+// the three broomsticks glass
+// personalized harry potter glass
+
+
+// QUESTION 6
+// Show me how to calculate how many items were made by their sellers
+// The output should be "18 were made by their sellers"
+
+/*
+
+.map() wants to do something (callbackfn) to each element in a given array and create a NEW array of ALL
+the results.
+
+.filter() wants to do something (callbackfn) to each element in a given array that can be coerced into being
+Boolean true or false. then it will create a NEW array of ONLY the TRUE values.
+
+.reduce() wants to do something (callbackfn) with a "previous value" and a "current value" in a given array and
+return a SINGLE VALUE (reduces it lol duh), not a new array.
+
+.forEach().....ugh..what..
+
+*/
+
+
+// "items" is name of the array above
+
 
 /* QUESTION 1 */
 
@@ -1126,26 +1138,71 @@ var priceItem = function (item) {
   return item.price;
 };
 
-//console.log(priceItem(items[0])); // check to see if priceItem function is working
+// console.log(priceItem(items[0])); // check to see if priceItem function is working
 
-var itemPrices = items.map(priceItem);
+var itemPrices = items.map(priceItem); // new array with only prices of all items
 
-//console.log(itemPrices); // new array with only prices of all items
+// console.log(itemPrices);
 
 var totalAllPrices = itemPrices.reduce(function (previousValueInItems, currentValueInItems) {
   return previousValueInItems + currentValueInItems;
-}, 0); // reduce on new itemPrices array
+}, 0); // reduce on new itemPrices array to give single value
 
-//console.log(totalAllPrices); // value of all prices added up
+// console.log(totalAllPrices); // shows value of all prices added up
 
 var averageOfAllPrices = totalAllPrices / items.length;
 
-var averagePrice = averageOfAllPrices.toFixed(2);
+var averagePrice = averageOfAllPrices.toFixed(2); // .toFixed(2) rounds the averageOfAllPrices variable to 2 decimals
 
 console.log("QUESTION ONE: The average price is $" + averagePrice);
 
 /* QUESTION 2 */
 
+var priceRange = function (item) {
+  return (item.price > 14) && (item.price < 18);
+};
+
+var filteredResults = items.filter(priceRange);
+
+console.log("QUESTION TWO: Items that cost between $14.00 USD and $18.00 USD:");
+
+filteredResults.forEach(function (item) { // why does this work???
+  console.log(item.title); // this gives the object in the new array something to display?
+});
+
+/* QUESTION 3 */
+
+var onlyGBP = function (item) {
+  return item.currency_code === "GBP";
+};
+
+var filterBritish = items.filter(onlyGBP);
+
+filterBritish.forEach(function (item) {
+  console.log("QUESTION THREE: " + item.title + " costs " + item.price.toFixed(2) + " " + item.currency_code);
+});
+
+// QUESTION FOUR
+// Show me how to find which items are made of wood. Please console.log the ones you find.
+// The output should be:
+//
+// SALE Mid Century Siesta Ware White Mug with Anchor - Set of 3 is made of wood.
+// Bottle cap catcher personalized. Man cave gift for him- Wooden Beer pub sign - Groomsmen wedding Gift is made of wood.
+// Medium Size, Welcome To Our Firepit-Where Friends And Marshmallows Get Toasted At The Same Time-Painted Wood Sign-Custom Colors is made of wood.
+// Magnetic Wall Mount Bottle Opener Barware Set - Stainless Steel or Black - Personalized if you like! is made of wood.
+// Engraved Pocket Knife, Personalized Groomsmen Gift, Ring Bearer Gift, Graduation Gift, 4 Knives is made of wood.
+
+// var onlyWood = function (item) {
+//   return item.materials === "wood";
+// };
+
+// var filterWood = items.filter(onlyWood);
+
+// filterWood.forEach(function (item) {
+//   console.log(item.title);
+// });
+
+// this doesn't work, ..there is an array as the value for the key "materials".. :(
 
 
 
