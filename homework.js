@@ -1122,7 +1122,7 @@ the results.
 Boolean true or false. then it will create a NEW array of ONLY the TRUE values.
 
 .reduce() wants to do something (callbackfn) with a "previous value" and a "current value" in a given array and
-return a SINGLE VALUE (reduces it lol duh), not a new array.
+return a SINGLE VALUE (reduces it), not a new array.
 
 .forEach().....ugh..what..
 
@@ -1204,28 +1204,7 @@ filterBritish.forEach(function (item) {
 
 // this doesn't work, ..there is an array as the value for the key "materials".. :(
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// :(:(:(:(
 
 
 
