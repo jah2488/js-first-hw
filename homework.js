@@ -1141,12 +1141,15 @@ var priceItem = function (item) {
 // console.log(priceItem(items[0])); // check to see if priceItem function is working
 
 var itemPrices = items.map(priceItem); // new array with only prices of all items
+// JH - Looks good, when you come in here to finish these questions, I would change this to use _.map()
 
-// console.log(itemPrices);
+// console.log(itemPrices); //JH - debugging console logs can be removed when no longer needed
 
 var totalAllPrices = itemPrices.reduce(function (previousValueInItems, currentValueInItems) {
   return previousValueInItems + currentValueInItems;
 }, 0); // reduce on new itemPrices array to give single value
+//JH - Can be changed to _.reduce()
+
 
 // console.log(totalAllPrices); // shows value of all prices added up
 
@@ -1162,13 +1165,14 @@ var priceRange = function (item) {
   return (item.price > 14) && (item.price < 18);
 };
 
-var filteredResults = items.filter(priceRange);
+var filteredResults = items.filter(priceRange);//JH - Good, can be changed to _.filter()
 
 console.log("QUESTION TWO: Items that cost between $14.00 USD and $18.00 USD:");
 
 filteredResults.forEach(function (item) { // why does this work???
   console.log(item.title); // this gives the object in the new array something to display?
 });
+// JH - Works good, when you come back through, don't forget to change this to a _.each()
 
 /* QUESTION 3 */
 
@@ -1196,6 +1200,13 @@ filterBritish.forEach(function (item) {
 //   return item.materials === "wood";
 // };
 
+/*
+    I think you'll find doing this question easier with _.contains() from the underscore library
+
+*/
+
+
+
 // var filterWood = items.filter(onlyWood);
 
 // filterWood.forEach(function (item) {
@@ -1209,3 +1220,4 @@ filterBritish.forEach(function (item) {
 
 
 
+// JH - Just make sure to finish the last few questions.
